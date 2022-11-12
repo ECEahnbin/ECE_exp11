@@ -78,7 +78,7 @@ always@(posedge clk or negedge rst) begin
 	end
 end
 
-always@(posedge clk or negedge rst) begin
+always@(posedge clk) begin
 	dac_csn <= 0;
 	dac_ldacn <= 0;
 	dac_a_b <= add_sel; // 0 : Select A, 1 : Select B
